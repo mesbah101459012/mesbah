@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<!-- Mirrored from blog.minhazav.dev/research/html5-qrcode by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2020 14:37:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="google-site-verification" content="Xs4Y8kOjxCHZvery6v-Y6yVIptmWsSjownRLWpRDDlc" />
+ <meta name="msvalidate.01" content="C21F82032619E6AE38AEC7FFE4D05827" />
+<link rel="stylesheet" href=../assets/main.css>
+<link rel="stylesheet" href=../assets/custom.css>
+<link rel="stylesheet" href=../assets/css/sharebar.css>
+<link rel="alternate" type="application/rss+xml" title="Minhaz&#39;s Blog" href="https://blog.minhazav.dev/feed.xml">
+<link rel="shortcut icon" href=https://blog.minhazav.dev/assets/favicon.ico>
+<link rel="icon" type="image/png" sizes="32x32" href=https://blog.minhazav.dev/assets/favicon.ico>
+  <script src="../assets/js/jquery.js"></script>
+<title>HTML5 QR Code Demo | Minhaz’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="HTML5 QR Code Demo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Demo of a cross platform HTML5 QR Code reader" />
+<meta property="og:description" content="Demo of a cross platform HTML5 QR Code reader" />
+<link rel="canonical" href="html5-qrcode-2.html" />
+<meta property="og:url" content="https://blog.minhazav.dev/research/html5-qrcode" />
+<meta property="og:site_name" content="Minhaz’s Blog" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HTML5 QR Code Demo" />
+<meta name="twitter:site" content="@minhazav" />
+<meta name="twitter:creator" content="@minhazav" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"HTML5 QR Code Demo","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.minhazav.dev/images/rsz_self_1_1.jpg"}},"url":"https://blog.minhazav.dev/research/html5-qrcode","description":"Demo of a cross platform HTML5 QR Code reader","@context":"https://schema.org"}</script>
+</head>
+ <body data-instant-allow-query-string data-instant-allow-external-links>
+  <header class="site-header">
+   <div class="wrapper-header">
+     <div class="header-left">
+       <div>
+          <a class="site-title" href="https://blog.minhazav.dev/">
+            <b>Minhaz's Experiments</b>
+          </a>
+       </div>
+       <div>
+          <a class="site-subtitle" href="https://blog.minhazav.dev/">
+            <b>Hack your way out!</b>
+          </a>
+       </div>
+     </div>
+     <div class="header-right">
+        <a class="page-link" href="https://blog.minhazav.dev/">Blog</a>
+        <a class="page-link" href="https://blog.minhazav.dev/about/">About Me</a>
+        <a class="page-link" href="https://github.com/mebjas">Github</a>
+        <a class="page-link" href="https://www.linkedin.com/in/minhazav">LinkedIn</a>
+     </div>
+   </div>
+ </header>
+   <main class="default-content" aria-label="Content">
+     <div class="wrapper-content">
+       <style>
+#reader {
+    width: 640px;
+}
+@media(max-width: 600px) {
+	#reader {
+		width: 300px;
+	}
+}
+.empty {
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+</style>
+<link rel="stylesheet"
+      href="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+<h1> HTML5 QR Code scanner</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" style="text-align: center;margin-bottom: 20px;">
+			<div id="reader" style="display: inline-block;"></div>
+			<div class="empty"></div>
+			<div id="scanned-result"></div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<h2>How to use?</h2>
+	<div>
+		You can either use <code>Html5QrcodePro</code> which takes of end to end
+		user interface and functionaility or you can use <code>Html5Qrcode</code>
+		with your own user interface. This demo is build using <code>Html5QrcodePro</code>.
+	</div>
+	<div class="empty"></div>
+	<div>
+		<h4>[1] Add javascript to your webpage either using npm</h4>
+		<a href="https://www.npmjs.com/package/html5-qrcode" target="new">
+			<img src="../../nodei.co/npm/html5-qrcode.png">
+		</a><br><br>
+		Or include the script directly using<br>
+		<pre style="background: none;"><code class="html">&#60;script src="html5-qrcode.min.js">&#60;/script></code></pre>
+		You can download the script from 
+		<a href="../../raw.githubusercontent.com/mebjas/html5-qrcode/master/minified/html5-qrcode.min.js">here</a>.
+		<br><br>
+		<h4>[2] Add an empty div where you want to place the qrcode scanner</h4>
+		<pre style="background: none;"><code class="html">&#60;div style="width: 500px" id="reader">&#60;/div></code></pre>
+		<h4>[3] Initialize</h4>
+		<pre style="background: none;"><code class="javascript">function onScanSuccess(qrCodeMessage) {
+	// handle on success condition with the decoded message
+}
+
+var html5QrcodeScanner = new Html5QrcodeScanner(
+	"reader", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess);
+</code></pre>
+	</div>
+</div>
+<div class="empty"></div>
+<div class="container">
+   <h2>FAQs</h2>
+    <strong>Is this supported on smartphones?</strong>
+   <div>Yes! the solution is based on vanilla HTML5 and javascript. This should work on any HTML5 supported browser.</div>
+   <div class="empty"></div>
+    <strong>Full example on how to use this?</strong>
+   <div>Check source code of this page or checkout this <a href="https://gist.github.com/mebjas/729c5397506a879ec704075c8a5284e8">gist</a> where I have copied js code.</div>
+   <div class="empty"></div>
+    <strong>I copied the demo code it's not working for me?</strong>
+   <div>
+        Few identified reasons so far:
+       <ol>
+           <li>Camera access only work for <code>https</code> and not <code>http</code> except for <code>localhost or local server</code>.</li>
+           <li>You cannot test this by opening the html file, it should be backed by a server - <a href="https://stackoverflow.com/questions/16835421/how-to-allow-chrome-to-access-my-camera-on-localhost">More info</a>.</li>
+       </ol>
+   </div>
+   <div class="empty"></div>
+    <strong>Where can I read more about this, is there a refernce article?</strong>
+   <div>
+        Apart from the documentation on the <a href="https://github.com/mebjas/html5-qrcode">github project</a>, following blog article may be helpful.
+       <div class="empty"></div>
+       <div class="post-info" style="border: 1px solid #cfcfcf73;padding: 5px;margin: 10px 0px 0px 0px;">
+           <h3 class="post-header"><a class="post-link" href="https://blog.minhazav.dev/HTML5-QR-Code-scanning-support-for-local-file-and-default-camera/">HTML5 QR Code scanning with javascript - Support for scanning the local file and using default camera added (v1.0.5)</a></h3>
+             <span class="post-description">
+               <img src="../images/post18_image2.jpg" style="max-width: 50%; float: left; margin: 0px 15px 10px 0px;">
+               <a href="https://github.com/mebjas/html5-qrcode">html5-qrcode</a> helps developer to integrate QR code scanning in HTML5 based applications. It abstracts camera access and usage on different browsers and simplify QR Code scanning for developers. The primary goal of the library is cross-platform support across different OS versions and Browsers. One of the key problems with cross-platform support was some browsers in Android and many browsers in iOS (almost all other than Safari which are based on WebKit for iOS) did not support camera access. This prevents users from doing inline QR Code scanning which is the primary feature of the library. To mitigate this I have added support for scanning local media on the device and it implicitly adds support for capturing QR Code using default camera on the device and scanning it. This is an upgrade to the existing library - you can read more about it <a href="https://blog.minhazav.dev/HTML5-QR-Code-scanning-launched-v1.0.1/">here</a>. In this article I have explained now file-based scanning works and how to use it.
+             </span>
+             <span class="read-more"><a href="https://blog.minhazav.dev/HTML5-QR-Code-scanning-support-for-local-file-and-default-camera/">[&nbsp;Read&nbsp;more&nbsp;]</a></span>
+       </div>
+       <div class="post-info" style="border: 1px solid #cfcfcf73;padding: 5px;margin: 10px 0px 0px 0px;">
+           <h3 class="post-header"><a class="post-link" href="https://blog.minhazav.dev/HTML5-QR-Code-scanning-launched-v1.0.1/">HTML5 QR Code scanning - launched v1.0.1 without jQuery dependency and refactored Promise based APIs</a></h3>
+            <span class="post-description">
+            <img src="../images/post14_image1.png" style="max-width: 50%; float: left; margin: 0px 15px 10px 0px;">
+            In 2015 I had written an HTML5 based QR code scanning library as a jQuery extension. Recently I realised there was some consistent traffic on my Github Project and the demo page. As I dug more into what was going on and I was embarrassed to see the poor design and obsolete support to the latest HTML APIs around Camera. I recently fixed some of the issues and refactored the javascript library that is now independent of jQuery and supports Promise based APIs. In this article I'll explain how to use the new version of the library, some changes and reasons for them and existing issues and plan to fix them.
+            </span>
+            <span class="read-more"><a href="https://blog.minhazav.dev/HTML5-QR-Code-scanning-launched-v1.0.1/">[&nbsp;Read&nbsp;more&nbsp;]</a></span>
+       </div>
+   </div>
+</div>
+<div style="display: block; height: 30px"></div>
+<div class="container">
+   <h2>References</h2>
+   <ol>
+       <li>Project on Github - <a href="https://github.com/mebjas/html5-qrcode">mebjas/html5-qrcode</a></li>
+       <li>How to use - <a href="https://blog.minhazav.dev/HTML5-QR-Code-scanning-launched-v1.0.1/">blog.minhazav.dev/HTML5-QR-Code-scanning-launched-v1.0.1</a></li>
+       <li>File based scanning - <a href="https://blog.minhazav.dev/HTML5-QR-Code-scanning-support-for-local-file-and-default-camera/">blog.minhazav.dev/HTML5-QR-Code-scanning-support-for-local-file-and-default-camera</a></li>
+   </ol>
+</div>
+<h2>Comments</h2>
+<script src="../../utteranc.es/client.js"
+    repo="mebjas/mebjas.github.io"
+    issue-term="title"
+    label="test"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script src="../assets/research/html5qrcode/html5-qrcode.min.js"></script>
+<script>
+function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}
+docReady(function() {
+	hljs.initHighlightingOnLoad();
+	var results = document.getElementById('scanned-result');
+	var lastMessage;
+	var codesFound = 0;
+	function onScanSuccess(qrCodeMessage) {
+		if (lastMessage !== qrCodeMessage) {
+			lastMessage = qrCodeMessage;
+			++codesFound;
+			results.innerHTML += `<div>[${codesFound}] - ${qrCodeMessage}</div>`;
+		}
+	}
+	var html5QrcodeScanner = new Html5QrcodeScanner(
+		"reader", { fps: 10, qrbox: 250 }, /* verbose= */ true);
+	html5QrcodeScanner.render(onScanSuccess);
+});
+</script>
+     </div>
+   </main>
+   <footer class="site-footer">
+   <div class="wrapper-footer">
+     <div class="footer-col-wrapper">
+<a href="mailto:minhazav@gmail.com"><i class="svg-icon email"></i></a>
+<a href="http://github.com/mebjas"><i class="svg-icon github"></i></a>
+<a href="http://instagram.com/mebjas"><i class="svg-icon instagram"></i></a>
+<a href="http://linkedin.com/in/https://www.linkedin.com/in/minhazav"><i class="svg-icon linkedin"></i></a>
+<a href="http://twitter.com/minhazav"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/users/2614250/mebjas"><i class="svg-icon stackoverflow"></i></a>
+     </div>
+     <div class="copyright">
+        © 2019 minhazav.dev
+     </div>
+   </div>
+    <script src="../assets/js/anchorize.js"></script>
+ </footer>
+    <script src="../assets/js/instantpage.js" type="module"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158605510-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-158605510-1');
+    </script>
+ </body>
+
+<!-- Mirrored from blog.minhazav.dev/research/html5-qrcode by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2020 14:37:11 GMT -->
+</html>

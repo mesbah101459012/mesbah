@@ -1,0 +1,109 @@
+/* Your local CSS File */
+/* aref-ruqaa-regular - arabic */
+@font-face {
+  font-family: 'Aref Ruqaa';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/aref-ruqaa-v7-arabic-regular.eot'); /* IE9 Compat Modes */
+  src: local('Aref Ruqaa Regular'), local('ArefRuqaa-Regular'),
+       url('../fonts/aref-ruqaa-v7-arabic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/aref-ruqaa-v7-arabic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/aref-ruqaa-v7-arabic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/aref-ruqaa-v7-arabic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/aref-ruqaa-v7-arabic-regular.svg#ArefRuqaa') format('svg'); /* Legacy iOS */
+}
+
+body{
+/* 	background-image : url(../image/12.png);
+	background-repeat: no-repeat; */
+	/* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(8, 8, 64) 31%, rgba(0,212,255,1) 100%) */
+
+
+
+
+}
+
+
+
+.container_ {
+	height: 100%;
+	
+}
+
+
+.navbar-nav  li {
+    float: right;
+}
+.container_{
+	/* border : red 4px solid; */
+	margin-top: 70px;
+    height: auto;
+    margin-bottom: 81px;
+
+	
+}
+
+.wrapper{
+	/* border: green 3px solid; */
+	top:none;
+}
+.container_form{
+	/* border : blue 3px solid; */
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-42%);
+    -ms-transform: translateY(-42%);
+    transform: translateY(-42%);
+    text-align: center;
+	z-index: 3;
+}
+
+.query, .verified{
+	/* border: blue 3px solid; */
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 250px;
+    border-radius: 3px;
+    padding: 15px 15px;
+    margin: 0 auto 38px auto;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    -webkit-transition-duration: 0.25s;
+    transition-duration:0.25s;
+	text-decoration: none;
+	color:white;
+
+}
+
+.query:hover, .verified:hover{
+	background-color: #2d1212;
+    opacity: 0.7;
+    color: white;
+	text-decoration:none;
+}
+	
+.footer_{
+	/* border : green 4px solid; */
+	background-color:black;
+	text-align:center;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

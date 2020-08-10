@@ -1,0 +1,148 @@
+                        camellia-192-cfb have time  2.714400 seconds. 
+                       camellia-192-cfb1 have time  35.34970 seconds. 
+                       camellia-192-cfb8 have time  6.402700 seconds. 
+                        camellia-192-ctr have time  2.710800 seconds. 
+                        camellia-192-ecb have time  1.611300 seconds. 
+                        camellia-192-ofb have time  2.527000 seconds. 
+                        camellia-256-cbc have time  2.791500 seconds. 
+                        camellia-256-cfb have time  4.070100 seconds. 
+                       camellia-256-cfb1 have time  47.89700 seconds. 
+                       camellia-256-cfb8 have time  6.068400 seconds. 
+                        camellia-256-ctr have time  2.589600 seconds. 
+                        camellia-256-ecb have time  1.981200 seconds. 
+                        camellia-256-ofb have time  2.511600 seconds. 
+                               cast5-cbc have time  2.386800 seconds. 
+                               cast5-cfb have time  3.104500 seconds. 
+                               cast5-ecb have time  1.715100 seconds. 
+                               cast5-ofb have time  2.758600 seconds. 
+                                chacha20 have time  2.984200 seconds. 
+                       chacha20-poly1305 have time  4.398100 seconds. 
+                                 des-cbc have time  3.380700 seconds. 
+                                 des-cfb have time  2.538500 seconds. 
+                                des-cfb1 have time  35.85730 seconds. 
+                                des-cfb8 have time  5.366400 seconds. 
+                                 des-ecb have time  1.638000 seconds. 
+                                 des-ede have time  2.449200 seconds. 
+                             des-ede-cbc have time  4.664400 seconds. 
+                             des-ede-cfb have time  3.198000 seconds. 
+                             des-ede-ofb have time  3.088800 seconds. 
+                                des-ede3 have time  2.823600 seconds. 
+                            des-ede3-cbc have time  3.198000 seconds. 
+                            des-ede3-cfb have time  4.061000 seconds. 
+                           des-ede3-cfb1 have time  87.88120 seconds. 
+                           des-ede3-cfb8 have time  11.49720 seconds. 
+                            des-ede3-ofb have time  3.541200 seconds. 
+                                 des-ofb have time  2.761200 seconds. 
+                                desx-cbc have time  2.293200 seconds. 
+                           id-aes128-CCM have time  4.945200 seconds. 
+                           id-aes128-GCM have time  4.945200 seconds. 
+                          id-aes128-wrap have time  1.953300 seconds. 
+                      id-aes128-wrap-pad have time  1.903300 seconds. 
+                           id-aes192-CCM have time  5.210400 seconds. 
+                           id-aes192-GCM have time  5.179200 seconds. 
+                          id-aes192-wrap have time  1.918800 seconds. 
+                      id-aes192-wrap-pad have time  1.840800 seconds. 
+                           id-aes256-CCM have time  5.132400 seconds. 
+                           id-aes256-GCM have time  4.992000 seconds. 
+                          id-aes256-wrap have time  1.903200 seconds. 
+                      id-aes256-wrap-pad have time  1.794000 seconds. 
+                id-smime-alg-CMS3DESwrap have time  1.326000 seconds. 
+                                idea-cbc have time  2.480400 seconds. 
+                                idea-cfb have time  2.683200 seconds. 
+                                idea-ecb have time  1.716000 seconds. 
+                                idea-ofb have time  2.605200 seconds. 
+                              rc2-40-cbc have time  2.929700 seconds. 
+                              rc2-64-cbc have time  2.870400 seconds. 
+                                 rc2-cbc have time  3.057600 seconds. 
+                                 rc2-cfb have time  3.276000 seconds. 
+                                 rc2-ecb have time  2.386800 seconds. 
+                                 rc2-ofb have time  3.260400 seconds. 
+                                     rc4 have time  1.700400 seconds. 
+                                  rc4-40 have time  1.851300 seconds. 
+                            rc4-hmac-md5 have time  2.027500 seconds. 
+                                seed-cbc have time  2.792400 seconds. 
+                                seed-cfb have time  2.652000 seconds. 
+                                seed-ecb have time  2.090400 seconds. 
+                                seed-ofb have time  2.716000 seconds. 
+                                 sm4-cbc have time  2.940000 seconds. 
+                                 sm4-cfb have time  2.496000 seconds. 
+                                 sm4-ctr have time  2.876400 seconds. 
+                                 sm4-ecb have time  1.653600 seconds. 
+                                 sm4-ofb have time  2.761200 seconds. 
+-------------
+Total tests: 71
+Max timing : 0.0008788 seconds for `des-ede3-cfb1` algorithm.
+Min timing : 1.33E-5 seconds for `id-smime-alg-CMS3DESwrap` algorithm.
+Details: 
+- 1.326000 seconds for `id-smime-alg-CMS3DESwrap`
+- 1.611300 seconds for `camellia-192-ecb`
+- 1.638000 seconds for `des-ecb`
+- 1.653600 seconds for `sm4-ecb`
+- 1.700400 seconds for `rc4`
+- 1.715100 seconds for `cast5-ecb`
+- 1.716000 seconds for `idea-ecb`
+- 1.794000 seconds for `id-aes256-wrap-pad`
+- 1.840800 seconds for `id-aes192-wrap-pad`
+- 1.851300 seconds for `rc4-40`
+- 1.903200 seconds for `id-aes256-wrap`
+- 1.903300 seconds for `id-aes128-wrap-pad`
+- 1.918800 seconds for `id-aes192-wrap`
+- 1.953300 seconds for `id-aes128-wrap`
+- 1.981200 seconds for `camellia-256-ecb`
+- 2.027500 seconds for `rc4-hmac-md5`
+- 2.090400 seconds for `seed-ecb`
+- 2.293200 seconds for `desx-cbc`
+- 2.386800 seconds for `rc2-ecb`
+- 2.386800 seconds for `cast5-cbc`
+- 2.449200 seconds for `des-ede`
+- 2.480400 seconds for `idea-cbc`
+- 2.496000 seconds for `sm4-cfb`
+- 2.511600 seconds for `camellia-256-ofb`
+- 2.527000 seconds for `camellia-192-ofb`
+- 2.538500 seconds for `des-cfb`
+- 2.589600 seconds for `camellia-256-ctr`
+- 2.605200 seconds for `idea-ofb`
+- 2.652000 seconds for `seed-cfb`
+- 2.683200 seconds for `idea-cfb`
+- 2.710800 seconds for `camellia-192-ctr`
+- 2.714400 seconds for `camellia-192-cfb`
+- 2.716000 seconds for `seed-ofb`
+- 2.758600 seconds for `cast5-ofb`
+- 2.761200 seconds for `sm4-ofb`
+- 2.761200 seconds for `des-ofb`
+- 2.791500 seconds for `camellia-256-cbc`
+- 2.792400 seconds for `seed-cbc`
+- 2.823600 seconds for `des-ede3`
+- 2.870400 seconds for `rc2-64-cbc`
+- 2.876400 seconds for `sm4-ctr`
+- 2.929700 seconds for `rc2-40-cbc`
+- 2.940000 seconds for `sm4-cbc`
+- 2.984200 seconds for `chacha20`
+- 3.057600 seconds for `rc2-cbc`
+- 3.088800 seconds for `des-ede-ofb`
+- 3.104500 seconds for `cast5-cfb`
+- 3.198000 seconds for `des-ede3-cbc`
+- 3.198000 seconds for `des-ede-cfb`
+- 3.260400 seconds for `rc2-ofb`
+- 3.276000 seconds for `rc2-cfb`
+- 3.380700 seconds for `des-cbc`
+- 3.541200 seconds for `des-ede3-ofb`
+- 4.061000 seconds for `des-ede3-cfb`
+- 4.070100 seconds for `camellia-256-cfb`
+- 4.398100 seconds for `chacha20-poly1305`
+- 4.664400 seconds for `des-ede-cbc`
+- 4.945200 seconds for `id-aes128-CCM`
+- 4.945200 seconds for `id-aes128-GCM`
+- 4.992000 seconds for `id-aes256-GCM`
+- 5.132400 seconds for `id-aes256-CCM`
+- 5.179200 seconds for `id-aes192-GCM`
+- 5.210400 seconds for `id-aes192-CCM`
+- 5.366400 seconds for `des-cfb8`
+- 6.068400 seconds for `camellia-256-cfb8`
+- 6.402700 seconds for `camellia-192-cfb8`
+- 11.49720 seconds for `des-ede3-cfb8`
+- 35.34970 seconds for `camellia-192-cfb1`
+- 35.85730 seconds for `des-cfb1`
+- 47.89700 seconds for `camellia-256-cfb1`
+- 87.88120 seconds for `des-ede3-cfb1`
+

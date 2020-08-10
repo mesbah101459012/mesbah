@@ -1,0 +1,15 @@
+## Ignore some folders and files
+others/*
+/database/info.txt
+/database/info_ar.txt
+/database/Object Definition.pdf
+/doc/calm-breeze-login-screen/*
+/Temporary File.txt
+/Text_.txt
+/Random_Code.txt
+/Charts_Google
+/Vendor
+/composer.json
+/composer.lock
+# Local Netlify folder
+.netlify

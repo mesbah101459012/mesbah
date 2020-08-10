@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.utteranc.es	TRUE	/	FALSE	1999999999	__cfduid	d7df32dbae025000a403ff445267ceb5b1596379012
+utteranc.es	TRUE	/	FALSE	1999999999	SameSite	Lax
+

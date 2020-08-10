@@ -1,0 +1,273 @@
+===================
+General Information
+===================
+	Agile :  Initial Planning > Planning > Analysis > Design > Implementation (Deployment ) > Testing > Evaluation
+	Types "How to setup and connect with library ? " > "npm install, Bower, Minified js, API"
+
+	Popular Qr code :
+	zxing		   : but support php with > third-party.
+	Zebra Crossing : android
+	libqrencode  :C library for encoding data in a QR Code symbol, a kind of 2D, LGPL library for encoding QR
+	PyQrCodec	 : is a Python library for encoding Qr codes to a PNG and decoding them from a variety of image formats.
+	iphone-qrcode: https://code.google.com/archive/p/iphone-qrcode/
+
+	how to create reader qr ? , Decode qr code?
+	php-version  : stable <7.4.8>
+	WebRTC Protocol.
+	
+
+
+
+
+
+==============
+QR(Encryption)
+==============
+*Encryption includes AES Symetric Algorithm 
+API (Charts):
+Using charts google	(note this is depreacted). 2k characters (data) with Get method and 16k (data) with Post method (URL Length data), Unlimited Request and Response.
+Google Chart Usage Policy > There's no limit to the number of calls per day you can make to the Google Chart API. However, we reserve the right to block any use that we regard as abusive. <https://developers.google.com/chart/image/docs/making_charts>
+	https://developers.google.com/web/fundamentals/media/capturing-images
+    https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=64546546&chld=H|0
+    https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=I+Love+QR+Codes!++HI+MOM!&choe=UTF-8
+	https://developers.google.com/chart/image/docs/post_requests  <if I use it"post_requests" with charts of google, Source code here> 
+	https://developers.google.com/chart/image/docs/data_formats   <This document explains how to send your chart data to the Google Chart API.>
+    https://github.com/typpo/quickchart	>  https://quickchart.io/qr?text=Hello+world  
+
+Libraries:
+	php(server side)
+	chillerlan/php-qrcode:  https://github.com/chillerlan/php-qrcode		Done
+	phpqrcode  		     :  http://phpqrcode.sourceforge.net/		Done
+	endroid/QrCode library: https://github.com/endroid/EndroidQrCodeBundle   UnTest
+	qrcode-generator(Samplist)  : https://github.com/kazuhikoarase/qrcode-generator/tree/master/php  Untest
+	jquery-qrcode (js) : https://github.com/jeromeetienne/jquery-qrcode     Untest > read https://stackoverflow.com/questions/5943368/dynamically-generating-a-qr-code-with-php
+	
+
+
+
+
+
+	
+==============
+QR(Decryption)		Reader, Scanner > from camera
+==============
+	*We choose libraries based on factors 1-Performance  2-"Clean or less problem" 3-Strong Code 4-"Available Mentainance" 5-Popular 6-size"library"
+ 
+Libraries: 
+	javascript(client side): instascan.js (vue.js , webRTC-Adapter) Browser should supports WebRTC Protocol (Https only).  Done
+	Webqr.com   Done
+	qrcodescan.in Done https onlye
+	https___blog.minhazav.dev_research_html5-qrcode.html Done only https
+	ZXing qrcode scanner(android,ios, no third-party ): https://github.com/LazarSoft/jsqrcode  ( Failed in chrome and firefox ) error > this plugin is not support, 
+	  Does not work most of the time, Only getting it to work in Chrome and camera option does not work at all. It is buggy stuff, do not invest many time in it, you are wasting your time! It seems that it can only 'read' barcodes that are encoded with L error correction mode.
+	  But with reverse "HTTrack Site" running in https protocol only 
+	php : dsiddharth2/php-zxing   fail
+	//  : https://github.com/khanamiryan/php-qrcode-detector-decoder fixed Done
+        : If image consist of qr shape + random shapes, this library can be extract qr code text > good
+
+
+
+
+=======================
+Encryption (Data) > AES 
+=======================
+Libraries
+	mycrypt > removed in >= 7.2.0
+	Sodium As of PHP 7.2.0 this extension is bundled with PHP < it takes time to handle it with my device because C++ , C Configuration Wanted and Specail package mannager .
+		Windows > In order to use this extension you have to add extension=php_sodium.dll to php.ini.
+	OpenSSL
+	Built In Functions (OpenSSL) in php
+
+
+========
+Database 
+========
+	*Mysql:  Start > Key, "Identification number", Name, "Partial Percentage"
+
+
+
+
+
+
+
+======
+Advice 
+======
+	*Use Laravel Framework to handle all.
+	*Review abdelrazek.dx.am source code to retrieve knowledge.
+	*to be build any application #Just only search like that and get all informations and features about it.
+		Reverse Engineering
+		Search the Tags of stackoverflow and  Topics in github with filter most voted and recently.
+
+
+
+
+
+=======
+Fetures
+=======
+please grant access to camera
+Light of Mobile
+Scan from Image
+Help (how to use it );
+Zoom 
+Scanner workload %, Ideal of Medium-sized barcodes.
+beep (sound ), Vibrate, copy to clipboard, Remember duplicates.
+
+
+
+
+
+
+
+
+=================
+How to (Tutorial)
+=================
+	https://www.sitepoint.com/create-qr-code-reader-mobile-website/ good Demo > https://ilrm9.csb.app/
+	
+	
+	https://itemit.com/qr-codes-vs-barcodes-which-is-best/
+	https://springerplus.springeropen.com/articles/10.1186/s40064-016-3020-9  > very nice analysis (article)
+	http://www.mobile-qr-codes.org/qr-codes-vs-barcodes.html
+
+
+
+
+
+
+
+
+==========================
+How to Apply< make, do,...>
+==========================
+ how to apply line moving up down through the screen while the camera is open?
+ Barcode reader with scanning indicator
+ Here's an overlay view
+ Camera view finder edges
+ Scanning laser
+ view's layer to animate its position
+ green box 
+ Barcode Scan Line Animation
+ accessing-webcam-with-php Can or Can't and why ?
+
+
+
+
+
+
+
+===================================
+Some Concepts Out of Project Target
+===================================
+
+	=======================
+	Questions about QR code 
+	=======================
+	Fastest way to read QR codes Client vs Server side?
+
+	How can I securely transmit a unique customer QR code to business scanner?
+
+	Does anyone actually use QR codes?
+
+	Are QR codes still relevant 2020?
+
+	When would you use a QR code?
+
+	Which is better barcode or QR code?
+
+	Are QR Codes Dead 2019?
+
+	Why QR Codes are bad?
+
+	What are the disadvantages of QR codes?
+
+	What does QR code stand for?
+
+	How do I read a QR code?
+
+	Can QR codes be tracked?
+
+	Can QR codes be dangerous?
+
+	Is it safe to use QR code?
+
+	How long does a QR code last?
+
+	What replaced QR codes?
+
+	Will we ever run out of QR codes?
+
+	Does Gen Z use QR codes?
+
+	Should I put QR code on business card?
+	What is the best QR code generator?
+    =================================
+
+	===================================
+	Questions About AES and Encryption 
+	===================================
+	#Stackoverflow.com
+	How to choose an AES encryption mode (CBC ECB CTR OCB CFB)? choose on of OCB (single pass) , CTR (speed)
+	Comparison of DES, Triple DES, AES, blowfish encryption for data
+	What's the difference between SHA and AES encryption? [closed]
+	AES Encryption - Key versus IV
+	passphrase-salt-and-iv-do-i-need-all-of-these?
+
+
+
+#Types of Supporting
+	Components > Active
+	Available in previous releases
+	ZXing-based third-party open source projects
+	Other related third-party open source projects
+
+
+#Types Formats Code : 
+	1D product	1D industrial	2D
+	UPC-A	Code 39	QR Code
+	UPC-E	Code 93	Data Matrix
+	EAN-8	Code 128	Aztec
+	EAN-13	Codabar	PDF 417
+	UPC/EAN Extension 2/5	ITF	MaxiCode
+	RSS-14
+	RSS-Expande
+
+
+#Search on google 
+	qr code generator
+	zxing
+	qrcode library
+	open source qr code reader
+	qr code generator android github
+	qr code generator and scanner android github
+	zxing library android
+	open source barcode scanner
+	
+Thumbnails > Windows keeps a copy of all your picture, videos and documents so you display as quickly.
+Stable domain with localhost.run 3.5$  
+https://github.com/zxing/zxing 
+C:\Users\Abdelrazek\AppData\Local\Microsoft\Windows\Caches
+Since libsodium is cross-platform, this also makes it easier to communicate with PHP from, e.g. Java applets or native mobile apps.
+WebRTC is the Internet standard that makes it possible to do live video calls right inside a web browser.
+
+=======================
+HTTP/1.1 header fields
+=======================
+HTTP headers let the client and the server pass additional information with an HTTP request or response. An HTTP header consists of its case-insensitive name followed by a colon (:), then by its value. Whitespace before the value is ignored.
+HTTP headers are the code that transfers data between a Web server and a client. HTTP headers are mainly intended for the communication between the server and client in both directions.
+HTTP Entity Header
+These headers include information regarding:
+
+Allow (methods supported by the identified resource)
+Content Encoding.
+Content Language.
+Content Location.
+Content Length.
+MD-5 (for checking the integrity of the message upon receipt).
+Content Range.
+Content Type.
+When it Expires.
+When it was last modified.
+
+

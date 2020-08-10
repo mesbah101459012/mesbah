@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>كلية الهندسة جامعة الازهر</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+        .map-container {
+            height: 280px;
+            position: relative;
+        }
+        
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--sidenave-->
+
+    <!--////////////////////sideNav//////////////-->
+    <div class="w-100 navBar  position-fixed z-index d-flex z-depth-3   ">
+
+
+        <div class=" w-50 h-100 d-flex align-items-center pl-3  ">
+            <i class="fas fa-align-justify  to_show_it  "></i>
+        </div>
+        <div class=" w-50 h-100 d-flex align-items-center justify-content-end">
+
+            <a href="index.html">
+                <p class="title mr-3 p-2 z-depth-2  ">خريجي جامعة الازهر</p>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="sideNave1 col-md-4 col-sm-6   h-100 position-fixed z-index overflow-auto z-depth-1   ">
+        <div class="icon w-100 d-flex justify-content-center ">
+            <a href="http://www.azhar.edu.eg" class=" w-75 h-75 ">
+                <img class=" w-100 h-100 " src="img/UniLogoSmall.png" alt="">
+            </a>
+        </div>
+
+        <div class="container ">
+            <a href="index.html" class="btn btn-danger btn-block m-0 border font-large   ">الرئيسية</a>
+            <a href="collage.html" class="btn btn-danger btn-block m-0 border font-large active ">الكلية</a>
+            <a href="certificate.html" class="btn btn-danger btn-block m-0 border font-large">الشهادة</a>
+            <!--Dropdown primary-->
+            <div class="dropdown">
+                <!--Trigger-->
+                <button class="btn btn-danger btn-block font-large m-0 border dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">دخول</button>
+                <!--Menu-->
+                <div class="dropdown-menu btn-block dropdown-primary">
+                    <a href="" class="dropdown-item text-center" data-toggle="modal" data-target="#modalLoginForm">تسجيل الدخول</a>
+                    <a href="" class="dropdown-item text-center" data-toggle="modal" data-target="#modalRegisterForm">تسجيل</a>
+                </div>
+            </div>
+            <!--/Dropdown primary-->
+            <i class="close fas fa-window-close position-absolute  "></i>
+        </div>
+
+    </div>
+    <!--//////////sideNave////////////-->
+
+    <!--to start the content after the top nave -->
+    <div style="height: 6em;"></div>
+    <!--to start the content after the top nave -->
+
+    <!--to close the nav -->
+    <div class="shadow position-fixed col-md-8  col-sm-6  h-100 z-index "></div>
+    <!--to close the nav -->
+
+    <!--sidenave-->
+
+    <!--head image-->
+    <!-- Jumbotron -->
+    <div class="jumbotron p-0 mb-0">
+
+        <!-- Card image -->
+        <div class="view overlay rounded-top image">
+            <img src="img/header-img.jpg" class="w-100" alt="Sample image">
+
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body text-center  image-content">
+
+            <!-- Title -->
+            <h1 class="card-title  my-4"><strong>كلية الهندسة </strong></h1>
+            <!-- Text -->
+            <p class="card-text py-2">كلية الهندسة جامعة الأزهر بالقاهرة هي إحدي كليات جامعة الأزهر، تقع بمدينة نصر، بدأت الدراسة بها عام 1963</p>
+            <!-- Button -->
+            <a href="https://ar.m.wikipedia.org/wiki/كلية_الهندسة_جامعة_الأزهر_بالقاهرة" target="_blank" class="btn btn-success btn-rounded mb-4">اقرء المزيد</a>
+
+        </div>
+
+    </div>
+    <!-- Jumbotron -->
+    <!--head image-->
+
+    <div class="w-100 line  ">
+        <p class="w-50 p-0 m-auto"></p>
+    </div>
+
+    <!--اقسام الكلية-->
+    <div class=" departments ">
+        <!-- Card content -->
+        <div class="card-body text-center image-content">
+
+            <!-- Title -->
+            <h1 class="card-title my-4"><strong class="p-2 z-depth-2 ">اقسام الكلية </strong></h1>
+            <p class="card-title  my-4">
+                <strong>ادخل لتتعرف علي كورسات القسم والمشاريع المميزه والطلبه المتميزين</strong>
+            </p>
+            <!-- Title -->
+
+            <!--الاقسام-->
+            <div class="row d-flex justify-content-around">
+
+                <div class="text-center col-lg-4  col-md-6 col-12">
+                    <button class="btn btn-default btn-block  btn-rounded font-weight-bold size-large mb-4" data-toggle="modal" data-target="#modalDepartmentContent">هندسة النظم والحاسبات</button>
+                </div>
+
+                <div class="text-center col-lg-4  col-md-6 col-12">
+                    <button class="btn btn-default btn-block  btn-rounded font-weight-bold size-large mb-4" data-toggle="modal" data-target="#modalDepartmentContent">هندسة النظم والحاسبات</button>
+                </div>
+
+                <div class="text-center col-lg-4  col-md-6 col-12">
+                    <button class="btn btn-default btn-block  btn-rounded font-weight-bold size-large mb-4" data-toggle="modal" data-target="#modalDepartmentContent">هندسة النظم والحاسبات</button>
+                </div>
+
+                <div class="text-center col-lg-4  col-md-6 col-12">
+                    <button class="btn btn-default btn-block  btn-rounded font-weight-bold size-large mb-4" data-toggle="modal" data-target="#modalDepartmentContent">هندسة النظم والحاسبات</button>
+                </div>
+
+                <div class="text-center col-lg-4  col-md-6 col-12">
+                    <button class="btn btn-default btn-block  btn-rounded font-weight-bold size-large mb-4" data-toggle="modal" data-target="#modalDepartmentContent">هندسة النظم والحاسبات</button>
+                </div>
+
+                <div class="text-center col-lg-4  col-md-6 col-12">
+                    <button class="btn btn-default btn-block  btn-rounded font-weight-bold size-large mb-4" data-toggle="modal" data-target="#modalDepartmentContent">هندسة النظم والحاسبات</button>
+                </div>
+
+            </div>
+            <!--الاقسام-->
+        </div>
+        <!--محتوى القسم-->
+        <div class="modal fade" id="modalDepartmentContent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog department-info" role="document">
+
+                <div class="modal-content container my-5 py-5 z-depth-1">
+
+                    <!--to close the moda-->
+                    <div class=" position-absolute  " style="right: 1%; top: 1%;" data-dismiss="modal" aria-label="Close">
+
+                        <i class="fas fa-window-close " aria-hidden="true"></i>
+                    </div>
+                    <!--to close the moda-->
+
+                    <!--Section: Content-->
+                    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+                        <div class="d-flex justify-content-center">
+                            <h1 class="font-weight-bold pb-2  "> بنين فقط</h1>
+                        </div>
+                        <!--Grid row-->
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                                <!--Image-->
+                                <div class="view overlay z-depth-1-half  ">
+                                    <img src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg" class="img-fluid" alt=" ">
+                                </div>
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-6 p-3 p-lg-0 mb-4 mb-md-0 ">
+                                <h3 class="font-weight-bold text-center ">هندسة النظم والحاسبات</h3>
+
+                                <p class="text-muted text-justify ">شعبة نظم التحكم الإلى و الحاسبات احد شعب قسم الهندسة الكهربية، والذي أنشأه د. حمدي الشيخ عندما كان عميدا لكلية الهندسة، وأنشئ هذا القسم ليواكب التقدم السريع في استخدام الحاسبات الآلية في المجالات المختلفة سواء التحكم الآلي
+                                    أو التطبيقات المختلفة.</p>
+                                <p class="text-muted text-justify ">شعبة نظم التحكم الإلى و الحاسبات احد شعب قسم الهندسة الكهربية، والذي أنشأه د. حمدي الشيخ عندما كان عميدا لكلية الهندسة، وأنشئ هذا القسم ليواكب التقدم السريع في استخدام الحاسبات الآلية في المجالات المختلفة سواء التحكم الآلي
+                                    أو التطبيقات المختلفة.</p>
+                                <form action="department.html" method="GET">
+
+                                    <input type="hidden" name="department" value="هندسة النظم والحاسبات">
+                                    <button class="btn btn-purple btn-block font-weight-bold size-large btn-md ml-0 ">تصفح القسم</button>
+                                </form>
+                            </div>
+                            <!--Grid column-->
+
+
+                        </div>
+                        <!--Grid row-->
+                    </section>
+                    <!--Section: Content-->
+                </div>
+            </div>
+        </div>
+        <!--محتوى القسم-->
+    </div>
+    <!--اقسام الكلية-->
+
+    <!--set counter-->
+    <div class="bg-grayImg  z-depth-2">
+        <div class="container py-5 ">
+            <!--Section: Content-->
+            <section class="p-5 z-depth-3 ">
+
+                <h3 class="text-center font-weight-bold mb-5">الجامعة في ارقام</h3>
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-6 col-lg-3 mb-4 text-center">
+                        <h4 class="h1 font-weight-normal mb-3">
+                            <i class="fas fa-university indigo-text"></i>
+                            <span class="d-inline-block count-up" data-from="0" data-to="7" data-time="3000"></span>
+                        </h4>
+                        <p class="font-weight-normal text-muted">اقسام الكلية</p>
+                    </div>
+
+                    <div class="col-6 col-lg-3 mb-4 text-center">
+                        <h4 class="h1 font-weight-normal mb-3">
+                            <i class="fas fa-user-graduate indigo-text"></i>
+                            <span class="d-inline-block count1" data-from="0" data-to="250" data-time="3000"></span>
+                        </h4>
+                        <p class="font-weight-normal text-muted">عدد الطلبة</p>
+                    </div>
+
+
+                    <div class="col-6 col-lg-3 mb-4 text-center">
+                        <h4 class="h1 font-weight-normal mb-3">
+                            <i class="fas fa-chalkboard-teacher indigo-text"></i>
+                            <span class="d-inline-block count3" data-from="0" data-to="250" data-time="3000"></span>
+                        </h4>
+                        <p class="font-weight-normal text-muted">اعضاء هيئة التدريس</p>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--Section: Content-->
+        </div>
+    </div>
+    <!--set counter-->
+
+    <!--conact with us-->
+    <div class="  bg-grayImg py-5   ">
+        <div class="container bg-white  py-5 z-depth-1">
+
+            <!--Section: Content-->
+            <section class="  px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center pb-2 ">
+
+                    <!--Grid column-->
+                    <div class="col-md-12 text-center">
+
+                        <h3 class="font-weight-bold">تواصل معنا</h3>
+
+                        <p class="text-muted h4">اذا كان لديك اقتراح او شكوى او معلومة تود ان تصل الينا فتواصل معنا.
+                        </p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-md-12 mb-0 mb-md-0">
+
+                        <!--Google map-->
+                        <div id="map-container-google-1" class="z-depth-1 map-container mb-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.3278381564032!2d31.314092914453422!3d30.056135924976545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e564a2bb901%3A0x75a55957065da008!2sAdministration%20Faculty%20of%20Engineering!5e0!3m2!1sen!2seg!4v1596598246950!5m2!1sen!2seg"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <!--Google Maps-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-md-12 mb-4 mb-md-0">
+                        <form action="">
+                            <!-- Material outline input -->
+                            <div class="md-form md-outline mt-3">
+                                <input type="email" id="form-email" class="form-control">
+                                <label for="form-email">الايميل</label>
+                            </div>
+
+                            <!-- Material outline input -->
+                            <div class="md-form md-outline">
+                                <input type="text" id="form-subject" class="form-control">
+                                <label for="form-subject">الموضوع</label>
+                            </div>
+
+                            <!--Material textarea-->
+                            <div class="md-form md-outline mb-3">
+                                <textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
+                                <label for="form-message ">كيف نستطيع مساعدتك</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-info btn-lg size-large ml-0"><i class="far fa-paper-plane ml-2"></i> ارسل</button>
+                        </form>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Content-->
+
+        </div>
+    </div>
+    <!--conact with us-->
+
+
+    <!--log in and out-->
+    <!--sign in form-->
+    <form class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">تسجيل الدخول</h4>
+                    <div class=" position-absolute z-index  " style="right: 1%; top: 1%;" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-window-close " aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="email" id="defaultForm-email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email">اكتب الايميل</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <input type="password" id="defaultForm-pass" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass">اكتب كلمة السر</label>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-default rounded">دخول</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <!--register form-->
+    <form class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">تسجيل</h4>
+                    <div class=" position-absolute z-index  " style="right: 1%; top: 1%;" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-window-close " aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-4">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="orangeForm-name" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-name">الاسم كامل</label>
+                    </div>
+                    <div class="md-form mb-4">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="email" id="orangeForm-email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-email">اختار ايميل</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <input type="password" id="orangeForm-pass" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-pass">كلمة السر</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <input type="password" id="orangeForm-repass" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-repass">كرر كلمة السر</label>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn  rounded btn-default">تسجيل</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--register form-->
+    <!--log in and out-->
+
+
+
+    <!--set footer-->
+    <footer class="sections pt-5 mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <h3>اتصل بنا</h3>
+                    <p class="font-weight-bold">
+                        Email : Info@azhar.edu.eg <br> العنوان / طريق النصر أمام قاعة المؤتمرات - مدينة نصر - القاهرة الرقم البريدي / 11751
+
+                    </p>
+                    <i class="footer-icon fab fa-facebook"></i>
+                    <i class="footer-icon fab fa-twitter"></i>
+                    <i class="footer-icon fab fa-google-plus"></i>
+                    <i class="footer-icon fab fa-youtube"></i>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 pad-top-5-smal">
+                    <h3>بوابة الأزهر الخدمية</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fas fa-angle-double-left"></i>
+                            <a href="http://www.azhar.edu.eg/Contactus" target="_blank">شكاوى و مقترحات</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-angle-double-left"></i>
+                            <a href="http://www.azhar.eg/" target="_blank">مشيخة الازهر</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-angle-double-left"></i>
+                            <a href="http://www.azhar.edu.eg/e-services" target="_blank">بوابة الازهر العلمية</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-angle-double-left"></i>
+                            <a href="http://www.azhar.eg/sawtalazhar" target="_blank">جريدة صوت الأزهر</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">هل لديك أى أسئلة ؟</h3>
+                        <form action="">
+                            <textarea class="form-control mb-3" name="" placeholder="Message..." id="" cols="30" rows="3"></textarea>
+
+                            <button class="form-btn mb-3 btn btn-light">Send Message</button>
+                            <p class="copy-desc font-weight-bold">
+                                All Copyright Are Reserved &copy; <br> By team of Graduates
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--set footer-->
+
+
+    <!-- jQuery -->
+    <script type="text/javascript " src="js/jquery.min.js "></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript " src="js/popper.min.js "></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript " src="js/bootstrap.min.js "></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript " src="js/mdb.min.js "></script>
+    <!-- Your custom scripts (optional) -->
+
+    <script src="js/mine.js " type="text/javascript ">
+    </script>
+
+</body>
+
+</html>
+
+</html>
+
+</html>
