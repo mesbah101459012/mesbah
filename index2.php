@@ -1,1 +1,0 @@
-<?php echo $_POST["response_qr"] ?>
